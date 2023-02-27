@@ -9,13 +9,14 @@ import (
 func main() {
 	plugin.Serve(&plugin.ServeOpts{
 		RuleSet: &tflint.BuiltinRuleSet{
-			Name:    "template",
-			Version: "0.1.0",
+			Name:    "observeinc",
+			Version: "0.1.3",
 			Rules: []tflint.Rule{
 				rules.NewAwsInstanceExampleTypeRule(),
 				rules.NewAwsS3BucketExampleLifecycleRule(),
 				rules.NewGoogleComputeSSLPolicyRule(),
 				rules.NewTerraformBackendTypeRule(),
+				rules.NewDatasetsNoDescriptionsRule(),
 			},
 		},
 	})
