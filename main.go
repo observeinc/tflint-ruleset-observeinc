@@ -12,11 +12,7 @@ func main() {
 			Name:    "observeinc",
 			Version: "0.1.3",
 			Rules: []tflint.Rule{
-				rules.NewAwsInstanceExampleTypeRule(),
-				rules.NewAwsS3BucketExampleLifecycleRule(),
-				rules.NewGoogleComputeSSLPolicyRule(),
-				rules.NewTerraformBackendTypeRule(),
-				rules.NewDatasetsNoDescriptionsRule(),
+				rules.NewObserveDatasetHasDescriptionsRule(),
 			},
 		},
 	})
