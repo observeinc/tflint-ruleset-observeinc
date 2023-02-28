@@ -13,6 +13,7 @@ func main() {
 			Version: "0.1.3",
 			Rules: []tflint.Rule{
 				rules.NewObserveDatasetDescriptionRule(),
+				rules.NewObserveDatasetOutputRule(),
 			},
 		},
 	})
