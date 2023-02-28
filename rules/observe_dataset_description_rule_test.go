@@ -20,7 +20,7 @@ resource "observe_dataset" "test" {}`,
 			Expected: helper.Issues{
 				{
 					Rule:    NewObserveDatasetDescriptionRule(),
-					Message: "dataset needs a description",
+					Message: "Dataset needs a description",
 					Range: hcl.Range{
 						Filename: "resource.tf",
 						Start:    hcl.Pos{Line: 2, Column: 1},
@@ -38,7 +38,7 @@ resource "observe_dataset" "test" {
 			Expected: helper.Issues{
 				{
 					Rule:    NewObserveDatasetDescriptionRule(),
-					Message: "dataset description should not be empty",
+					Message: "Dataset description should not be empty",
 					Range: hcl.Range{
 						Filename: "resource.tf",
 						Start:    hcl.Pos{Line: 3, Column: 16},

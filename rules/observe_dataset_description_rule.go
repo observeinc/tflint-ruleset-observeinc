@@ -51,7 +51,7 @@ func (r *ObserveDatasetDescriptionRule) Check(runner tflint.Runner) error {
 		if !exists {
 			return runner.EmitIssue(
 				r,
-				"dataset needs a description",
+				"Dataset needs a description",
 				resource.DefRange,
 			)
 		}
@@ -63,7 +63,7 @@ func (r *ObserveDatasetDescriptionRule) Check(runner tflint.Runner) error {
 			if description == "" {
 				return runner.EmitIssue(
 					r,
-					"dataset description should not be empty",
+					"Dataset description should not be empty",
 					attr.Expr.Range(),
 				)
 			}
