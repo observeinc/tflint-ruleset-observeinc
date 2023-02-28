@@ -12,7 +12,7 @@ func main() {
 			Name:    "observeinc",
 			Version: "0.1.3",
 			Rules: []tflint.Rule{
-				rules.NewObserveDatasetHasDescriptionsRule(),
+				rules.NewObserveDatasetDescriptionRule(),
 			},
 		},
 	})
