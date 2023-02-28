@@ -29,6 +29,14 @@ resource "observe_dataset" "aws_ecs" {}`,
 				},
 			},
 		},
+		{
+			Name: "issue not found",
+			Content: `
+resource "observe_dataset" "aws_ecs" {
+	description = "Amazon ECS is a fully managed container orchestration service that makes it easy for you to deploy, manage, and scale containerized applications."
+}`,
+			Expected: helper.Issues{},
+		},
 	}
 
 	rule := NewObserveDatasetHasDescriptionsRule()
