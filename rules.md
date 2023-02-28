@@ -2,7 +2,7 @@
 
 This page serves to elaborate on the purpose of each rule that is tested.
 
-## Observe Dataset Descriptions
+## Observe Dataset Description
 
 This rule checks that `observe_dataset` resources have a `description` attribute, and that the `description` attribute is not an empty string.
 

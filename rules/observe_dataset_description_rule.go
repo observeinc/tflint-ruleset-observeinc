@@ -32,7 +32,7 @@ func (r *ObserveDatasetDescriptionRule) Severity() tflint.Severity {
 
 // Link returns the rule reference link
 func (r *ObserveDatasetDescriptionRule) Link() string {
-	return "https://github.com/observeinc/tflint-ruleset-observeinc/blob/main/rules.md#Observe-Dataset-Descriptions"
+	return "https://github.com/observeinc/tflint-ruleset-observeinc/blob/dani/no-dataset-descriptions/rules.md#observe-dataset-description"
 }
 
 // Check checks whether observe_dataset has description attribute
