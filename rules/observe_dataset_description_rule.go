@@ -17,7 +17,7 @@ func NewObserveDatasetDescriptionRule() *ObserveDatasetDescriptionRule {
 
 // Name returns the rule name
 func (r *ObserveDatasetDescriptionRule) Name() string {
-	return "observe_dataset_description_rule"
+	return "observe_dataset_description"
 }
 
 // Enabled returns whether the rule is enabled by default
