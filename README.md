@@ -12,7 +12,7 @@ This is a custom ruleset for Observe's Terraform provider. For documentation on 
 
 |Name|Description|Severity|Enabled|Link|
 | --- | --- | --- | --- | --- |
-|observe_dataset_description_rule|Checks that `observe_dataset` resources have a non-empty description attribute|WARNING|✔||
+|observe_dataset_description_rule|Checks that `observe_dataset` resources have a non-empty description attribute|WARNING|✔|[Link](https://github.com/observeinc/tflint-ruleset-observeinc/blob/main/rules/observe_dataset_description_rule.go)|
 
 ## Building the plugin
 
